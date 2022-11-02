@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/adreses.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header style="background-color: #79553db6;">
+            <h3 style="text-shadow: 3px 3px 3px rgba(0,0,0,0.5); color: rgb(196, 157, 125);">Coffee shop</h3>
+            </header>
+            
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="cafe-outline"></ion-icon></ion-icon></span>
+                            <span class="title">Coffee shop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="title">Главная страница</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+                            <span class="title">Категории</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/shop/sale.html">
+                            <span class="icon"><ion-icon name="alert-outline"></ion-icon></span>
+                            <span class="title">SALE</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/shop/link.html">
+                            <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                            <span class="title">Связь с нами</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/shop/adreses.html">
+                            <span class="icon"><ion-icon name="navigate-outline"></ion-icon></span>
+                            <span class="title">Адреса</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span class="title">Вход</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="toggle"></div>
+            </div>
+            
+        <div class="basket-header" style=" text-align: center;">
+            
+
+
+            <div class="goods-block">
+                <footer>
+                    <div class="footer"><div class="information">
+                        
+                        
+                            <p><h2><br>Наши магазины находятся на следующих адресах:<br></h2></p>
+                            <a1>Россия, Ростов-на-Дону, площадь Гагарина, 1</a1>
+                            <a2><br>Россия,Ростов-на-Дону,улица Нансена, 114/18<br></a2>
+                            <hr>
+                            <center><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A053a99e59aa52fe71be4ee47a1fc461e91b30f260654991fd95d93d58f78006d&amp;width=800&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script></center>
+                        
+                        
+                    </div></div>
+            
+                </footer>
+            </div>
+        </div>
+</body>
+<script src="js\unit.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let navigation = document.querySelector('.navigation');
+    let toggle = document.querySelector('.toggle');
+    toggle.onclick = function(){
+        navigation.classList.toggle('active');
+    }
+</script>
+</html>
